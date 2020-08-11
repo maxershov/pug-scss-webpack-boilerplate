@@ -1,0 +1,6 @@
+{ 
+    "extends": "clock",
+    "validateLineBreaks": null,
+    "requireLowerCaseAttributes": null,
+    "disallowIdLiterals": null
+}

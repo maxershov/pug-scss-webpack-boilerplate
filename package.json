@@ -32,6 +32,8 @@
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
     "pug-html-loader": "^1.1.5",
+    "pug-lint": "^2.6.0",
+    "pug-lint-config-clock": "^2.0.0",
     "sass-loader": "^9.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",

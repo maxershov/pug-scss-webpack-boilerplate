@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin')
 
 
 const pug = {
@@ -67,6 +68,7 @@ const config = {
       algorithm: "gzip"
     }),
     new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
+    new ManifestPlugin({ fileName: 'asset-manifest.json', })
   ]
 };
 module.exports = config;

@@ -43,7 +43,7 @@ const config = {
   mode: "production",
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js'
+    filename: '[name].[contenthash].bundle.js'
   },
   module: {
     rules: [pug, styles, img, etc]
@@ -66,7 +66,7 @@ const config = {
     new CompressionPlugin({
       algorithm: "gzip"
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
   ]
 };
 module.exports = config;
